@@ -43,6 +43,7 @@ app.post('/api/memos', jsonParser, function (req, res) {
     var memo = new MemoModel({
         title: req.body.title,
         author: req.body.author,
+      additional: req.body.additional,
         text: req.body.text,
     });
 

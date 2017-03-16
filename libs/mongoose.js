@@ -18,6 +18,7 @@ var Schema = mongoose.Schema;
 var Memo = new Schema({
     title: { type: String, required: true },
     author: { type: String, required: true },
+    additional: {type: String, required: false},
     text: { type: String, required: true },
     modified: { type: Date, default: Date.now }
 });
